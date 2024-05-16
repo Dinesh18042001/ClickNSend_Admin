@@ -90,7 +90,7 @@ const Contant = () => {
   const fetchdata = async (id) => {
     setLoader(true);
     await apiAdminConfig
-      .get(`api/auth/master/company/view/${id}`)
+       .get(`api/auth/master/company/view/${id}`)
       .then((response) => {
         if (response.status === 200) {
           setPosts(response?.data?.view_data[0]);

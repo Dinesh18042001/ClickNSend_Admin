@@ -86,6 +86,7 @@ const Contant = () => {
     "Job Status",
     "Action",
   ];
+
   const [search, setSearch] = useState("");
 
   const handlePageChange = (event, value) => {
@@ -550,6 +551,7 @@ const Contant = () => {
                                                 : "Unknown Status"}
                                             </Button>
                                             <Dropdown.Item
+
                                               onClick={() => {
                                                 navigate(
                                                   `/master/customer/users/edit/${el?.user_id}`
